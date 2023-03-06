@@ -106,12 +106,17 @@ img {
 
 
 
+@media (min-width: 768px) {
+    .pricing-table,
+    .testimonial-grid,
+    .testimonial-grid { max-width: 720px;}
+}
+
+@media (min-width: 992px) {
+    footer .container { max-width: 1080px; }
+}
 
 @media (min-width: 1200px) {
     .container { max-width: 1140px;}
 }
 
-@media (min-width: 768px) {
-    .pricing-table { max-width: 720px;}
-    .testimonial-grid { max-width: 720px;}
-}

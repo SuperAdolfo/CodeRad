@@ -50,13 +50,17 @@
     position: relative;
     z-index: 1;
     padding: 4.6875rem 0;
+    filter: brightness(50%);
 }
+
+
+
 
 .bg-header { background-image: url(../assets/images/bg-header-1.jpg); }
 .video-demo { background-image: url(../assets/images/bg-demo.jpg); }
 
 .bg-header::before {
-    background-image: linear-gradient(
+    background: linear-gradient(
         30deg,
         rgba (21, 27, 38, 0.8),
         rgba (0, 0, 0, 0.2) 100% 
@@ -76,6 +80,10 @@
 
 .hero-header {
     color: var(--white);
+}
+
+.hero-wrapper {
+    color: white;
 }
 
 .why-me-wrapper {
@@ -313,6 +321,88 @@ footer .footer-top {
     padding: var(--size-100);
 }
 
-footer .footer-top {
+footer  {
     background-color: var(--footer);
+}
+
+footer .footer-col {
+    justify-self: center;
+}
+
+.footer-top h5 {
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: var(--size-16);
+}
+
+.contact-info li {
+    color: var(--white);
+    margin-bottom: var(--size-10)
+}
+
+.contact-info li i {
+    width: var(--size-30);
+}
+
+.social-icons ul li {
+    display: inline-block;
+    margin-right: var(--size-16);
+}
+
+.social-icons ul li a {
+    color: white;
+    font-size: var(--size-16);
+}
+
+.service-wrapper p { color: #858497}
+
+.recent-posts {
+    display: flex;
+    margin-bottom: var(--size-16);
+}
+
+.recent-posts .post-img-wrapper {
+    width: var(--size-100);
+    margin-right: var(--size-10);
+}
+
+.post-inner h6 { margin: 0; }
+
+.post-inner h6 a {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.post-inner span {
+    color: var(--font-color-light);
+    font-size: var(--size-10);
+}
+
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    padding: var(--size-16) 0;
+}
+
+.copyright {
+    color: var(--font-color-light);
+}
+
+.footer-bottom-links ul li {
+    display: inline-block;
+    margin-right: var(--size-10);
+    color: var(--white);
+}
+
+.footer-bottom-wrapper ul li a {  color: white; }
+
+.footer-bottom-links {
+    position: relative;
+    bottom: -20px;
+
 }
